@@ -1,0 +1,259 @@
+/* --- Google Font Import --- */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Sarabun:wght@400;700&display=swap');
+
+/* --- CSS Variables (Dark Mode Design System) --- */
+:root {
+    --primary-color: #38B2AC;      /* A modern, elegant teal */
+    --background-color: #1A202C;   /* Dark Charcoal */
+    --card-bg-color: #2D3748;       /* Slightly lighter charcoal for cards */
+    --text-color-light: #E2E8F0;    /* Off-white for readability */
+    --text-color-secondary: #A0AEC0;
+    --border-color: #4A5568;
+
+    --font-primary: 'Playfair Display', serif; /* Elegant serif for headings */
+    --font-secondary: 'Sarabun', sans-serif;   /* Clean sans-serif for body */
+
+    --container-width: 1120px;
+    --container-padding: 20px;
+    --border-radius-main: 8px;
+    --shadow-light: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-medium: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* --- Base & Reset Styles --- */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-secondary);
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--text-color-light);
+    background-color: var(--background-color);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--font-primary);
+    font-weight: 700;
+    color: var(--text-color-light);
+    line-height: 1.3;
+}
+
+h1 { font-size: 3.5rem; }
+h2 { font-size: 2.8rem; text-align: center; margin-bottom: 1rem; }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.2rem; }
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+a:hover {
+    color: #64d8d3;
+}
+
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+}
+
+/* --- Header & Navigation --- */
+.main-header {
+    background-color: rgba(26, 32, 44, 0.85); /* Dark, translucent */
+    border-bottom: 1px solid var(--border-color);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    font-family: var(--font-primary);
+    font-weight: 700;
+    font-size: 1.7rem;
+    color: var(--text-color-light);
+}
+
+.nav-links a {
+    font-family: var(--font-secondary);
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--text-color-secondary);
+    transition: color 0.3s ease;
+}
+.nav-links a:hover {
+    color: var(--text-color-light);
+}
+
+/* --- Hero Section --- */
+.hero {
+    padding: 7rem 0;
+    text-align: center;
+}
+.hero h1 {
+    font-size: 4rem;
+}
+.hero .subtitle {
+    font-size: 1.25rem;
+    color: var(--text-color-secondary);
+    max-width: 700px;
+    margin: 1rem auto 2.5rem;
+}
+
+.cta-button {
+    background: var(--primary-color);
+    color: var(--background-color);
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    font-family: var(--font-secondary);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(56, 178, 172, 0.3);
+    border: none;
+}
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 7px 20px rgba(56, 178, 172, 0.4);
+}
+
+/* --- Framework Overview Section --- */
+.framework-overview {
+    padding: 5rem 0;
+    background-color: var(--background-color);
+    border-top: 1px solid var(--border-color);
+}
+
+.phases-grid {
+    gap: 2rem;
+}
+
+.phase-card {
+    background-color: var(--card-bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-main);
+    box-shadow: none;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+.phase-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--primary-color);
+}
+
+.phase-card h3 {
+    color: var(--text-color-light);
+}
+.phase-card h3::before {
+    content: 'Phase ' counter(phase) ': ';
+    counter-increment: phase;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+body { counter-reset: phase; }
+
+.article-links {
+    border-top: 1px solid var(--border-color);
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+}
+.article-links a {
+    font-weight: 700;
+    color: var(--text-color-secondary);
+}
+.article-links a:hover {
+    color: var(--primary-color);
+}
+.article-links a::after {
+    content: ' →';
+    transition: transform 0.2s ease-out;
+    display: inline-block;
+}
+.article-links a:hover::after {
+    transform: translateX(4px);
+}
+
+/* --- Article Page Styles --- */
+.article-content {
+    padding: 5rem 0;
+    background-color: var(--background-color);
+}
+.article-content .container {
+    max-width: 760px;
+}
+.article-header {
+    border-bottom: 2px solid var(--primary-color);
+}
+.article-header h1 {
+    font-size: 3.5rem;
+}
+.article-content strong {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.data-table {
+    border: 1px solid var(--border-color);
+}
+.data-table th, .data-table td {
+    border: 1px solid var(--border-color);
+}
+.data-table th {
+    background-color: var(--card-bg-color);
+    color: var(--text-color-light);
+}
+
+/* --- Animation Classes --- */
+.scroll-animate {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.scroll-animate.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* --- Footer --- */
+.main-footer {
+    background-color: #11151C;
+    color: var(--text-color-secondary);
+    padding: 3rem 0;
+    border-top: 1px solid var(--border-color);
+}
+.main-footer p {
+    margin: 0;
+}
+
+/* --- Responsive & Mobile Menu --- */
+.main-header .container { display: flex; justify-content: space-between; align-items: center; }
+.nav-links { list-style: none; display: flex; gap: 2rem; }
+.mobile-menu-toggle { display: none; background: none; border: none; cursor: pointer; z-index: 1001; }
+.mobile-menu-toggle span { display: block; width: 25px; height: 3px; background-color: var(--text-color-light); margin: 5px 0; transition: all 0.3s ease-in-out; }
+.phases-grid { display: grid; grid-template-columns: 1fr; }
+
+@media (min-width: 768px) {
+    .phases-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 1024px) {
+    .phases-grid { grid-template-columns: repeat(4, 1fr); }
+    .main-nav { display: block; }
+    .mobile-menu-toggle { display: none; }
+}
+@media (max-width: 1023px) {
+    .mobile-menu-toggle { display: block; }
+    .main-nav { position: fixed; top: 0; right: 0; width: 80%; height: 100vh; background-color: var(--card-bg-color); flex-direction: column; justify-content: center; align-items: center; transform: translateX(100%); transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1); box-shadow: -5px 0 25px rgba(0,0,0,0.2); display: flex; }
+    .main-nav.nav-active { transform: translateX(0); }
+    .nav-links { flex-direction: column; text-align: center; gap: 2.5rem; }
+    .nav-links a { font-size: 1.5rem; }
+    .mobile-menu-toggle.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+    .mobile-menu-toggle.active span:nth-child(2) { opacity: 0; }
+    .mobile-menu-toggle.active span:nth-child(3) { transform: rotate(-45deg) translate(7px, -6px); }
+}

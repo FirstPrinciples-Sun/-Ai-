@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>บทที่ 10: Minimum Viable Product (MVP) - คลาสแผนธุรกิจ</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Sarabun:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <a href="../index.html" class="logo">คลาสแผนธุรกิจ</a>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="../index.html#phase1">เฟส 1: รากฐาน</a></li>
+                    <li><a href="../index.html#phase2">เฟส 2: พิมพ์เขียว</a></li>
+                    <li><a href="../index.html#phase3">เฟส 3: กลไก</a></li>
+                    <li><a href="../index.html#phase4">เฟส 4: แหล่งทุน</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="article-content scroll-animate">
+            <div class="container">
+                <header class="article-header">
+                    <h1>บทที่ 10: สร้าง-วัดผล-เรียนรู้</h1>
+                    <p class="article-subtitle">พลังของ Minimum Viable Product (MVP)</p>
+                </header>
+
+                <p>หนึ่งในกับดักที่ใหญ่ที่สุดของคนทำธุรกิจคือการใช้เวลาเป็นปีๆ เพื่อสร้างผลิตภัณฑ์ที่ "สมบูรณ์แบบ" แต่เมื่อเปิดตัวออกมากลับพบว่า "ไม่มีใครต้องการ" แนวคิดเรื่อง Minimum Viable Product (MVP) ถูกสร้างขึ้นมาเพื่อแก้ปัญหานี้โดยตรง</p>
+
+                <h4>MVP ไม่ใช่ "ผลิตภัณฑ์เวอร์ชันห่วย"</h4>
+                <p>ความเข้าใจผิดที่พบบ่อยที่สุดคือ MVP คือผลิตภัณฑ์เวอร์ชันแรกที่ตัดฟีเจอร์ออกจนเหลือแต่แกนและทำงานได้ไม่ดี</p>
+                <p>ที่จริงแล้ว MVP คือ <strong>"ผลิตภัณฑ์เวอร์ชันที่เล็กที่สุด ที่สามารถส่งมอบคุณค่าหลัก (Core Value) ให้กับลูกค้ากลุ่มแรก (Early Adopters) และเริ่มต้นวงจรการเรียนรู้ (Feedback Loop) ได้"</strong></p>
+                <p>เป้าหมายของ MVP ไม่ใช่การทำเงิน แต่คือ <strong>การเรียนรู้ให้ได้มากที่สุด โดยใช้ความพยายามน้อยที่สุด</strong></p>
+
+                <h4>ตัวอย่าง MVP ในตำนาน</h4>
+                <ul>
+                    <li>
+                        <strong>Dropbox:</strong> แทนที่จะสร้างระบบเก็บไฟล์บนคลาวด์ที่ซับซ้อน Drew Houston (ผู้ก่อตั้ง) สร้าง MVP เป็น "วิดีโอ" ที่อธิบายว่า Dropbox จะทำงานอย่างไร แล้วนำไปโพสต์ในเว็บบอร์ดของโปรแกรมเมอร์ ผลคือมีคนลงชื่อรอใช้บริการข้ามคืนเป็นหมื่นๆ คน นี่คือการพิสูจน์ความต้องการโดยไม่ต้องเขียนโค้ดที่ซับซ้อนเลย
+                    </li>
+                    <li>
+                        <strong>Zappos:</strong> Nick Swinmurn (ผู้ก่อตั้ง) อยากรู้ว่าคนจะซื้อรองเท้าออนไลน์ไหม แทนที่จะสร้างคลังสินค้าและเว็บไซต์ E-commerce เต็มรูปแบบ เขาไปที่ร้านรองเท้าในห้าง ถ่ายรูป แล้วนำมาโพสต์ขายบนเว็บง่ายๆ เมื่อมีคนสั่งซื้อ เขาก็กลับไปที่ร้านเพื่อซื้อรองเท้านั้นแล้วส่งให้ลูกค้า นี่คือ MVP ที่พิสูจน์โมเดลธุรกิจโดยใช้ทรัพยากรน้อยที่สุด
+                    </li>
+                </ul>
+
+                <h4>วิธีการสร้าง MVP</h4>
+                <p>หัวใจของมันคือวงจร **Build-Measure-Learn (สร้าง-วัดผล-เรียนรู้)**:</p>
+                <ol>
+                    <li><strong>Build (สร้าง):</strong> สร้างผลิตภัณฑ์เวอร์ชันที่เล็กที่สุดที่แก้ปัญหาหลักได้</li>
+                    <li><strong>Measure (วัดผล):</strong> นำไปให้ลูกค้ากลุ่มแรกใช้ แล้ววัดผลพฤติกรรมของพวกเขาอย่างจริงจัง (เช่น พวกเขาใช้ฟีเจอร์ไหน? พวกเขาติดตรงไหน?)</li>
+                    <li><strong>Learn (เรียนรู้):</strong> นำข้อมูลที่ได้มาเรียนรู้ว่าสมมติฐานของเราถูกหรือผิด แล้วตัดสินใจว่าจะ **Persevere (ทำต่อ)** หรือ **Pivot (ปรับเปลี่ยนทิศทาง)**</li>
+                </ol>
+
+                <h4>MVP ของ "เว็บไซต์คลาสแผนธุรกิจ" ของเราอาจจะเป็นอะไรได้บ้าง?</h4>
+                <ul>
+                    <li>อาจจะเป็นแค่ "บทความเดียว" ที่สรุป Phase 1 ทั้งหมด แล้วโพสต์ลงใน Facebook Group เพื่อดูว่ามีคนสนใจอ่านและคอมเมนต์หรือไม่</li>
+                    <li>อาจจะเป็น "Landing Page" หน้าเดียวที่อธิบายคอร์สทั้งหมด แล้วมีปุ่มให้ลงชื่อ "รับข่าวสารเมื่อคอร์สเปิดตัว" เพื่อวัดความต้องการ</li>
+                    <li>อาจจะเป็น "เทมเพลต Excel" สำหรับทำโมเดลการเงินอย่างเดียว แล้วแจกฟรีเพื่อดูว่ามีคนดาวน์โหลดและใช้งานจริงหรือไม่</li>
+                </ul>
+                <p>การคิดแบบ MVP จะช่วยลดความเสี่ยง, ประหยัดเวลาและเงินทุน, และทำให้แน่ใจว่าคุณกำลังสร้างสิ่งที่ตลาดต้องการจริงๆ</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2024 คลาสเรียนเขียนแผนธุรกิจฉบับสมบูรณ์. สงวนลิขสิทธิ์.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>บทที่ 15: Fundraising - คลาสแผนธุรกิจ</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Sarabun:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <a href="../index.html" class="logo">คลาสแผนธุรกิจ</a>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="../index.html#phase1">เฟส 1: รากฐาน</a></li>
+                    <li><a href="../index.html#phase2">เฟส 2: พิมพ์เขียว</a></li>
+                    <li><a href="../index.html#phase3">เฟส 3: กลไก</a></li>
+                    <li><a href="../index.html#phase4">เฟส 4: แหล่งทุน</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="article-content scroll-animate">
+            <div class="container">
+                <header class="article-header">
+                    <h1>บทที่ 15: ด่านสุดท้าย</h1>
+                    <p class="article-subtitle">การระดมทุน (Fundraising) ตั้งแต่ Seed ถึง Series A</p>
+                </header>
+
+                <p>การระดมทุนคือกระบวนการในการหา "เชื้อเพลิง" (Fuel) จากนักลงทุนภายนอกเพื่อมาเร่งการเติบโตของ "เครื่องจักร" (Engine) ที่คุณสร้างขึ้น มันคือการแลก "หุ้น" ของบริษัท (Equity) กับ "เงินทุน" เพื่อให้คุณวิ่งได้เร็วกว่าการใช้กำไรของตัวเองมาลงทุนต่อ</p>
+                <p>นี่คือภาพรวมของเส้นทางการระดมทุนโดยทั่วไป:</p>
+
+                <h4>Bootstrapping (การใช้ทุนตัวเอง)</h4>
+                <p>นี่คือการสร้างธุรกิจโดยไม่พึ่งเงินลงทุนจากภายนอก ใช้เงินเก็บส่วนตัวหรือรายได้จากลูกค้ากลุ่มแรกมาหมุนเวียน</p>
+                <ul>
+                    <li><strong>ข้อดี:</strong> คุณเป็นเจ้าของบริษัท 100%, มีอิสระในการตัดสินใจเต็มที่</li>
+                    <li><strong>ข้อเสีย:</strong> เติบโตได้ช้ากว่าคู่แข่งที่ระดมทุน, มีความเสี่ยงส่วนตัวสูง</li>
+                </ul>
+
+                <h4>Pre-Seed / Seed Round (รอบเริ่มต้น)</h4>
+                <p>นี่คือ "เงินก้อนแรก" ที่เข้ามาในบริษัทอย่างเป็นทางการ</p>
+                <ul>
+                    <li><strong>เป้าหมาย:</strong> เพื่อเปลี่ยนไอเดียให้เป็นผลิตภัณฑ์จริง (MVP), พิสูจน์ Problem-Solution Fit, และหา Traction แรกๆ</li>
+                    <li><strong>นักลงทุน:</strong> มักจะเป็น Friends, Family & Fools (FFF), Angel Investors (นักลงทุนอิสระ), หรือ Micro-VCs (กองทุน VC ขนาดเล็กที่เน้นลงทุนในระยะเริ่มต้น)</li>
+                    <li><strong>สิ่งที่ต้องมี:</strong> ทีมผู้ก่อตั้งที่แข็งแกร่ง, ไอเดียที่ชัดเจน, และความเข้าใจในตลาดอย่างลึกซึ้ง (สิ่งที่เราเรียนใน Phase 1-2)</li>
+                </ul>
+
+                <h4>Series A (รอบการเติบโต)</h4>
+                <p>นี่คือรอบการระดมทุนสถาบัน (Institutional Round) ครั้งสำคัญครั้งแรก</p>
+                 <ul>
+                    <li><strong>เป้าหมาย:</strong> เพื่อ "ขยายขนาด" (Scale) ธุรกิจที่มีโมเดลที่พิสูจน์แล้ว นำเงินไปสร้างทีม, พัฒนาผลิตภัณฑ์, และทำการตลาดอย่างจริงจัง</li>
+                    <li><strong>นักลงทุน:</strong> กองทุน Venture Capital (VC)</li>
+                    <li><strong>สิ่งที่ต้องมี:</strong>
+                        <ul>
+                            <li>ผลิตภัณฑ์ที่ใช้งานได้จริงและมีลูกค้าที่รัก</li>
+                            <li>Traction ที่ชัดเจนและเติบโตอย่างต่อเนื่อง (เช่น รายได้, จำนวนผู้ใช้งาน)</li>
+                            <li>Unit Economics (LTV/CAC) ที่ดีและพิสูจน์แล้วว่าโมเดลทำกำไรได้</li>
+                            <li>ทีมงานที่พร้อมจะขยายขนาด</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h4>Series B, C, D... (รอบขยายตลาด)</h4>
+                <p>รอบต่อๆ ไปนี้มีเป้าหมายเพื่อการเติบโตที่เร็วขึ้นไปอีก เช่น การขยายไปต่างประเทศ, การเข้าซื้อกิจการอื่น, หรือการครองตลาดให้ได้อย่างสมบูรณ์</p>
+
+                <h4>สิ่งที่คุณต้องเตรียมพร้อมก่อนไปคุยกับนักลงทุน</h4>
+                <ol>
+                    <li><strong>Pitch Deck:</strong> สไลด์นำเสนอ 10-15 หน้าที่เล่าเรื่องราวธุรกิจของคุณได้อย่างคมคายและน่าตื่นเต้น</li>
+                    <li><strong>Financial Model:</strong> แบบจำลองทางการเงินที่แสดงให้เห็นว่าเงินลงทุนจะถูกนำไปใช้อย่างไรและจะสร้างการเติบโตได้อย่างไร</li>
+                    <li><strong>ความเข้าใจในธุรกิจของคุณอย่างลึกซึ้ง:</strong> คุณต้องตอบคำถามได้ทุกแง่มุม ตั้งแต่เรื่องเล็กๆ ไปจนถึงวิสัยทัศน์ที่ยิ่งใหญ่</li>
+                </ol>
+                <p>การระดมทุนคือเส้นทางที่ยาวนานและเหนื่อย แต่หากทำสำเร็จ มันคือเชื้อเพลิงชั้นดีที่จะทำให้จรวดของคุณพุ่งทะยานไปได้ไกลกว่าเดิม</p>
+                <p><strong>ขอแสดงความยินดีด้วย! คุณได้เดินทางผ่าน The Gauntlet Framework ครบทั้ง 4 เฟสแล้ว ตอนนี้คุณมีความรู้ที่ครอบคลุมเทียบเท่าปริญญาโทด้านธุรกิจ พร้อมที่จะสร้างแผนธุรกิจที่แข็งแกร่งและนำเสนอต่อโลกแล้ว!</strong></p>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2024 คลาสเรียนเขียนแผนธุรกิจฉบับสมบูรณ์. สงวนลิขสิทธิ์.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

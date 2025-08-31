@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>บทที่ 13: Financial Modeling - คลาสแผนธุรกิจ</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Sarabun:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <a href="../index.html" class="logo">คลาสแผนธุรกิจ</a>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="../index.html#phase1">เฟส 1: รากฐาน</a></li>
+                    <li><a href="../index.html#phase2">เฟส 2: พิมพ์เขียว</a></li>
+                    <li><a href="../index.html#phase3">เฟส 3: กลไก</a></li>
+                    <li><a href="../index.html#phase4">เฟส 4: แหล่งทุน</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="article-content scroll-animate">
+            <div class="container">
+                <header class="article-header">
+                    <h1>บทที่ 13: ทำนายอนาคตด้วยตัวเลข</h1>
+                    <p class="article-subtitle">การสร้างแบบจำลองทางการเงิน (Financial Modeling)</p>
+                </header>
+
+                <p>ถ้าหากงบการเงินคือ "ภาพอดีต" ของธุรกิจ แบบจำลองทางการเงิน หรือ Financial Model ก็คือ "ภาพอนาคต" ที่คุณคาดการณ์ มันคือเรื่องราวของธุรกิจคุณที่เล่าผ่านตัวเลขในโปรแกรม Spreadsheet อย่าง Excel หรือ Google Sheets</p>
+
+                <h4>Financial Model ไม่ใช่ "ลูกแก้ววิเศษ"</h4>
+                <p>เป้าหมายของการสร้างโมเดลไม่ใช่การทำนายอนาคตให้ถูกต้อง 100% (เพราะไม่มีใครทำได้) แต่เป้าหมายที่แท้จริงคือ:</p>
+                <ul>
+                    <li>เพื่อแสดงให้เห็นว่าคุณ "เข้าใจ" ว่าอะไรคือปัจจัยขับเคลื่อน (Key Drivers) ธุรกิจของคุณ</li>
+                    <li>เพื่อทดสอบสถานการณ์ต่างๆ (Scenario Analysis) เช่น "ถ้าเราหาลูกค้าได้น้อยกว่าที่คิด 20% จะเกิดอะไรขึ้น?"</li>
+                    <li>เพื่อใช้เป็นเครื่องมือในการสื่อสารกับนักลงทุนว่าคุณคาดการณ์การเติบโตไว้อย่างไร</li>
+                </ul>
+
+                <h4>องค์ประกอบหลักของ Financial Model</h4>
+                <p>โมเดลที่ดีมักจะประกอบด้วยชีตต่างๆ ที่เชื่อมโยงกัน:</p>
+                <ol>
+                    <li>
+                        <strong>Assumptions Sheet (ชีตสมมติฐาน):</strong>
+                        <p>นี่คือชีตที่ "สำคัญที่สุด" เป็นที่ที่คุณรวบรวมสมมติฐานทั้งหมดที่ใช้ในการคำนวณ เช่น อัตราการเติบโตของลูกค้า, Conversion Rate, ราคาขาย, ต้นทุนต่อหน่วย, เงินเดือนพนักงาน การแยกชีตนี้ออกมาทำให้ง่ายต่อการปรับแก้และทดสอบสถานการณ์ต่างๆ</p>
+                    </li>
+                    <li>
+                        <strong>Projections (ชีตการคาดการณ์):</strong>
+                        <p>นี่คือผลลัพธ์ที่ได้จากการนำสมมติฐานมาคำนวณ โดยทั่วไปจะแสดงการคาดการณ์งบการเงิน 3 งบหลัก (ที่เรียนในบทที่แล้ว) ล่วงหน้าไป 3-5 ปี</p>
+                        <ul>
+                            <li>งบกำไรขาดทุน (Income Statement)</li>
+                            <li>งบดุล (Balance Sheet)</li>
+                            <li>งบกระแสเงินสด (Cash Flow Statement)</li>
+                        </ul>
+                    </li>
+                     <li>
+                        <strong>Charts & Dashboards (ชีตกราฟและสรุป):</strong>
+                        <p>ชีตนี้จะนำตัวเลขจากชีตการคาดการณ์มาแสดงเป็นภาพกราฟที่เข้าใจง่าย เพื่อให้เห็นภาพรวมและแนวโน้มที่สำคัญได้อย่างรวดเร็ว</p>
+                    </li>
+                </ol>
+
+                <h4>เริ่มต้นจาก "ล่างขึ้นบน" (Bottom-Up)</h4>
+                <p>วิธีที่ดีที่สุดในการสร้างโมเดลสำหรับ Startup คือการพยากรณ์แบบ Bottom-Up</p>
+                <ul>
+                    <li><strong>อย่าพูดว่า:</strong> "ตลาดใหญ่แสนล้าน เราขอแค่ 1% ก็พอ" (นี่คือ Top-Down)</li>
+                    <li><strong>ให้พูดว่า:</strong> "เราจะลงโฆษณาเดือนละ X บาท คาดว่าจะได้ Traffic Y คน ซึ่งจะเปลี่ยนเป็นลูกค้า Z คน โดยแต่ละคนจ่ายเงินเฉลี่ย A บาท ดังนั้นรายได้ของเราคือ Z x A" (นี่คือ Bottom-Up)</li>
+                </ul>
+                <p>การพยากรณ์แบบ Bottom-Up แสดงให้เห็นว่าคุณมีแผนการปฏิบัติจริงที่สามารถทำได้ ไม่ใช่แค่การฝันถึงส่วนแบ่งตลาดลอยๆ</p>
+                <p>Financial Model คือเครื่องมือที่ทรงพลังที่สุดในการแปลง "วิสัยทัศน์" ของคุณให้กลายเป็น "แผนการ" ที่จับต้องและวัดผลได้ด้วยตัวเลข</p>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2024 คลาสเรียนเขียนแผนธุรกิจฉบับสมบูรณ์. สงวนลิขสิทธิ์.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

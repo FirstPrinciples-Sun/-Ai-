@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>บทที่ 7: Unit Economics - คลาสแผนธุรกิจ</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Sarabun:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <a href="../index.html" class="logo">คลาสแผนธุรกิจ</a>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="../index.html#phase1">เฟส 1: รากฐาน</a></li>
+                    <li><a href="../index.html#phase2">เฟส 2: พิมพ์เขียว</a></li>
+                    <li><a href="../index.html#phase3">เฟส 3: กลไก</a></li>
+                    <li><a href="../index.html#phase4">เฟส 4: แหล่งทุน</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="article-content scroll-animate">
+            <div class="container">
+                <header class="article-header">
+                    <h1>บทที่ 7: ธุรกิจนี้ 'รอด' หรือ 'ร่วง'?</h1>
+                    <p class="article-subtitle">วัดชีพจรด้วย Unit Economics</p>
+                </header>
+
+                <p>Unit Economics คือคณิตศาสตร์พื้นฐานที่ตัดสินว่าโมเดลธุรกิจของคุณ "ยั่งยืน" หรือไม่ คำถามง่ายๆ คือ: <strong>"ต่อลูกค้า 1 คนที่เราหามาได้ เราได้กำไรหรือขาดทุน?"</strong></p>
+                <p>มี 2 ค่าที่คุณต้องรู้จักและคำนวณให้ได้:</p>
+
+                <h4>1. LTV (Customer Lifetime Value) - มูลค่าตลอดอายุการใช้งานของลูกค้า</h4>
+                <p>นี่คือ <strong>กำไรทั้งหมด</strong> ที่คุณคาดว่าจะได้รับจากลูกค้า 1 คน ตลอดช่วงเวลาที่เขาเป็นลูกค้าของคุณ</p>
+                <ul>
+                    <li><strong>วิธีคิดง่ายๆ:</strong> (รายได้เฉลี่ยต่อลูกค้าต่อเดือน) x (จำนวนเดือนเฉลี่ยที่ลูกค้าอยู่กับเรา) - (ต้นทุนผันแปรในการบริการลูกค้า)</li>
+                </ul>
+
+                <h4>2. CAC (Customer Acquisition Cost) - ต้นทุนในการหาลูกค้าใหม่ 1 คน</h4>
+                <p>นี่คือค่าใช้จ่ายทั้งหมดด้านการตลาดและการขาย หารด้วยจำนวนลูกค้าใหม่ที่คุณได้มาในช่วงเวลานั้น</p>
+                 <ul>
+                    <li><strong>วิธีคิดง่ายๆ:</strong> (ค่าการตลาดทั้งหมด + เงินเดือนทีมขาย) / (จำนวนลูกค้าใหม่)</li>
+                </ul>
+
+                <h4>กฎทองคำ: LTV ต้องมากกว่า CAC</h4>
+                <p>ธุรกิจที่แข็งแรงและน่าลงทุนควรมี <strong>LTV > 3x CAC</strong>. อัตราส่วนนี้แสดงให้เห็นว่าทุกๆ 1 บาทที่คุณจ่ายไปเพื่อหาลูกค้า คุณได้กลับคืนมา 3 บาท</p>
+                <ul>
+                    <li><strong>LTV < CAC:</strong> คุณกำลังขาดทุนกับลูกค้าทุกคน ยิ่งเติบโตยิ่งขาดทุนหนัก</li>
+                    <li><strong>LTV = CAC:</strong> คุณไม่ได้กำไรเลย ไม่เหลือเงินไปพัฒนาหรือจ้างคน</li>
+                    <li><strong>LTV > 3x CAC:</strong> ยอดเยี่ยม! คุณมีเครื่องจักรทำเงินที่ยั่งยืนและพร้อมที่จะขยายขนาด</li>
+                </ul>
+
+                <h4>ตัวอย่างสำหรับ "เว็บไซต์คลาสแผนธุรกิจ" ของเรา:</h4>
+                <ul>
+                    <li><strong>CAC:</strong> เราจ่ายค่าโฆษณา Facebook ไป 3,000 บาท ได้คนมาซื้อคอร์สพรีเมียม 10 คน -> <strong>CAC = 300 บาท/คน</strong></li>
+                    <li><strong>LTV:</strong> ลูกค้า 1 คนโดยเฉลี่ยซื้อคอร์สราคา 900 บาท และใน 1 ปีข้างหน้ามีโอกาส 50% ที่จะซื้อเทมเพลตอีก 400 บาท (เฉลี่ย 200 บาท) -> <strong>LTV (แบบง่าย) = 900 + 200 = 1,100 บาท</strong></li>
+                    <li><strong>ผลลัพธ์:</strong> LTV (1,100 บาท) / CAC (300 บาท) = 3.67x. อัตราส่วนนี้มากกว่า 3 เท่า -> <strong>โมเดลนี้ใช้ได้!</strong></li>
+                </ul>
+                <p>Unit Economics คือตัวเลขที่นักลงทุนให้ความสำคัญมากที่สุด เพราะมันพิสูจน์ว่าโมเดลธุรกิจของคุณไม่ใช่แค่ "ความฝัน" แต่เป็น "เครื่องจักร" ที่ทำงานได้จริงและพร้อมที่จะเติบโต</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2024 คลาสเรียนเขียนแผนธุรกิจฉบับสมบูรณ์. สงวนลิขสิทธิ์.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

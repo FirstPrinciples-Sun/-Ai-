@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>บทที่ 12: Financial Statements - คลาสแผนธุรกิจ</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Sarabun:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <a href="../index.html" class="logo">คลาสแผนธุรกิจ</a>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="../index.html#phase1">เฟส 1: รากฐาน</a></li>
+                    <li><a href="../index.html#phase2">เฟส 2: พิมพ์เขียว</a></li>
+                    <li><a href="../index.html#phase3">เฟส 3: กลไก</a></li>
+                    <li><a href="../index.html#phase4">เฟส 4: แหล่งทุน</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="article-content scroll-animate">
+            <div class="container">
+                <header class="article-header">
+                    <h1>บทที่ 12: ภาษานักลงทุน</h1>
+                    <p class="article-subtitle">ทำความเข้าใจ 3 งบการเงินสำคัญ</p>
+                </header>
+
+                <p>ยินดีต้อนรับสู่ Phase สุดท้าย! ที่นี่คือด่านของ "ตัวเลข" ซึ่งเป็นภาษาที่นักลงทุนใช้พูดคุยกัน การเข้าใจงบการเงินคือการแสดงให้เห็นว่าคุณไม่ได้มีแค่ "ความฝัน" แต่มี "แผน" ที่จะสร้างธุรกิจที่ทำกำไรได้จริง</p>
+                <p>มีงบการเงิน 3 ตัวที่คุณต้องรู้จักเหมือนเพื่อนสนิท:</p>
+
+                <h4>1. งบกำไรขาดทุน (Income Statement)</h4>
+                <p><strong>เปรียบเหมือน:</strong> ภาพยนตร์ที่เล่าเรื่องราวของธุรกิจคุณใน "ช่วงเวลาหนึ่ง" (เช่น 1 ไตรมาส หรือ 1 ปี)</p>
+                <p>มันบอกว่าในช่วงเวลานั้น ธุรกิจของคุณ "ทำกำไร" หรือ "ขาดทุน" เท่าไหร่</p>
+                <p><strong>สมการง่ายๆ:</strong> <code>รายได้ (Revenue) - ค่าใช้จ่าย (Expenses) = กำไรสุทธิ (Net Profit)</code></p>
+                <ul>
+                    <li><strong>รายได้:</strong> เงินทั้งหมดที่เข้ามาจากการขายสินค้าหรือบริการ</li>
+                    <li><strong>ค่าใช้จ่าย:</strong> เงินทั้งหมดที่จ่ายออกไปเพื่อให้ได้มาซึ่งรายได้นั้น เช่น ต้นทุนสินค้า, เงินเดือน, ค่าการตลาด</li>
+                </ul>
+                <p>นักลงทุนจะดูงบนี้เพื่อประเมินศักยภาพในการทำกำไรของธุรกิจคุณ</p>
+
+                <h4>2. งบดุล (Balance Sheet)</h4>
+                <p><strong>เปรียบเหมือน:</strong> ภาพถ่าย ณ "จุดใดจุดหนึ่งของเวลา" (เช่น ณ วันที่ 31 ธันวาคม)</p>
+                <p>มันบอก "สุขภาพ" ทางการเงินของบริษัท ณ วันนั้น ว่ามีทรัพย์สินและหนี้สินเท่าไหร่</p>
+                <p><strong>สมการที่ต้องเป็นจริงเสมอ:</strong> <code>สินทรัพย์ (Assets) = หนี้สิน (Liabilities) + ส่วนของผู้ถือหุ้น (Equity)</code></p>
+                <ul>
+                    <li><strong>สินทรัพย์:</strong> สิ่งที่บริษัทเป็นเจ้าของ (เช่น เงินสด, อุปกรณ์, ลูกหนี้การค้า)</li>
+                    <li><strong>หนี้สิน:</strong> สิ่งที่บริษัทเป็นหนี้คนอื่น (เช่น เงินกู้, เจ้าหนี้การค้า)</li>
+                    <li><strong>ส่วนของผู้ถือหุ้น:</strong> เงินทุนของเจ้าของและกำไรสะสม</li>
+                </ul>
+
+                <h4>3. งบกระแสเงินสด (Cash Flow Statement)</h4>
+                <p><strong>เปรียบเหมือน:</strong> สมุดบัญชีเงินสดของบริษัทใน "ช่วงเวลาหนึ่ง"</p>
+                <p>นี่คืองบที่สำคัญที่สุดสำหรับ Startup เพราะบริษัทส่วนใหญ่ไม่ได้เจ๊งเพราะ "ขาดทุน" แต่เจ๊งเพราะ "ขาดเงินสด" งบนี้จะติดตามการไหลเข้าและออกของ "เงินสด" จริงๆ เท่านั้น</p>
+                <p><strong>สมการง่ายๆ:</strong> <code>เงินสดเข้า (Cash Inflows) - เงินสดออก (Cash Outflows) = การเปลี่ยนแปลงของเงินสดสุทธิ (Net Change in Cash)</code></p>
+                <p>มันจะแยกกิจกรรมเป็น 3 ส่วนหลัก:
+                    <ol>
+                        <li><strong>จากกิจกรรมดำเนินงาน:</strong> เงินสดจากการซื้อขายปกติ</li>
+                        <li><strong>จากกิจกรรมลงทุน:</strong> เงินสดจากการซื้อขายสินทรัพย์ระยะยาว</li>
+                        <li><strong>จากกิจกรรมจัดหาเงิน:</strong> เงินสดจากการกู้ยืมหรือเพิ่มทุน</li>
+                    </ol>
+                </p>
+                <p>การเข้าใจทั้ง 3 งบนี้จะทำให้คุณสามารถพูดคุยกับนักลงทุนได้อย่างมั่นใจและเป็นมืออาชีพ</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2024 คลาสเรียนเขียนแผนธุรกิจฉบับสมบูรณ์. สงวนลิขสิทธิ์.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

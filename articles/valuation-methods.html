@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>บทที่ 14: Valuation Methods - คลาสแผนธุรกิจ</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Sarabun:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <a href="../index.html" class="logo">คลาสแผนธุรกิจ</a>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="../index.html#phase1">เฟส 1: รากฐาน</a></li>
+                    <li><a href="../index.html#phase2">เฟส 2: พิมพ์เขียว</a></li>
+                    <li><a href="../index.html#phase3">เฟส 3: กลไก</a></li>
+                    <li><a href="../index.html#phase4">เฟส 4: แหล่งทุน</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="article-content scroll-animate">
+            <div class="container">
+                <header class="article-header">
+                    <h1>บทที่ 14: ธุรกิจของคุณมีมูลค่าเท่าไหร่?</h1>
+                    <p class="article-subtitle">วิธีการประเมินมูลค่า (Valuation)</p>
+                </header>
+
+                <p>Valuation หรือ การประเมินมูลค่ากิจการ คือหนึ่งในหัวข้อที่ลึกลับและถกเถียงกันมากที่สุดในการทำธุรกิจ โดยเฉพาะกับ Startup ที่ยังไม่มีรายได้หรือกำไรที่ชัดเจน</p>
+                <p>สิ่งสำคัญที่ต้องเข้าใจคือ: <strong>Valuation เป็น "ศิลปะ" มากกว่า "วิทยาศาสตร์"</strong> มันคือการเจรจาต่อรองบนพื้นฐานของข้อมูลบางอย่าง ไม่ใช่การคำนวณหาคำตอบที่ถูกต้องเพียงหนึ่งเดียว</p>
+
+                <h4>วิธีการประเมินมูลค่าที่นิยมใช้</h4>
+                <p>มีหลายวิธีในการประเมินมูลค่า แต่สำหรับ Startup เราจะโฟกัสที่ 2-3 วิธีหลักๆ:</p>
+
+                <h5>1. Comparable Company Analysis (การเปรียบเทียบบริษัทที่คล้ายกัน)</h5>
+                <p><strong>แนวคิด:</strong> "ถ้าบริษัท A ที่ทำธุรกิจคล้ายๆ เราในตลาดเดียวกัน เพิ่งระดมทุนไปด้วยมูลค่า X ล้านบาท บริษัทเราก็น่าจะมีมูลค่าใกล้เคียงกัน"</p>
+                <p>นี่คือวิธีที่ "นิยมใช้มากที่สุด" สำหรับ Startup เพราะมันอิงจาก "ราคาตลาด" จริงๆ ที่เกิดขึ้นเร็วๆ นี้</p>
+                <ul>
+                    <li><strong>วิธีการ:</strong> ค้นหาข่าวการระดมทุนของบริษัทในอุตสาหกรรม, ประเทศ, และระยะ (Stage) เดียวกันกับคุณ แล้วนำมาใช้เป็นจุดอ้างอิงในการเจรจา</li>
+                    <li><strong>ข้อควรระวัง:</strong> ไม่มีบริษัทไหนที่เหมือนกัน 100% คุณต้องสามารถอธิบายได้ว่าคุณ "ดีกว่า" หรือ "แตกต่าง" จากบริษัทที่นำมาเปรียบเทียบอย่างไร</li>
+                </ul>
+
+                <h5>2. Discounted Cash Flow (DCF) (การคิดลดกระแสเงินสด)</h5>
+                <p><strong>แนวคิด:</strong> "มูลค่าของธุรกิจในวันนี้ คือผลรวมของ 'กำไรเงินสด' ทั้งหมดที่มันจะสร้างได้ในอนาคต คิดลดกลับมาเป็นมูลค่าปัจจุบัน"</p>
+                <p>นี่คือวิธีที่เป็น "หลักการ" และ "วิชาการ" มากที่สุด แต่ก็ "ยากที่สุด" สำหรับ Startup</p>
+                <ul>
+                    <li><strong>วิธีการ:</strong> นำ Financial Model ที่เราสร้างในบทที่แล้ว มาพยากรณ์กระแสเงินสดอิสระ (Free Cash Flow) ในอีก 5-10 ปีข้างหน้า แล้วใช้ "อัตราคิดลด" (Discount Rate) ซึ่งสะท้อนความเสี่ยง มาคำนวณหามูลค่าปัจจุบัน</li>
+                    <li><strong>ข้อควรระวัง:</strong> ผลลัพธ์ของ DCF จะอ่อนไหวต่อ "สมมติฐาน" ที่ใช้มาก (เช่น อัตราการเติบโต, อัตราคิดลด) ซึ่งสำหรับ Startup แล้ว สมมติฐานเหล่านี้มักจะไม่แน่นอนสูง</li>
+                </ul>
+
+                <h5>3. ปัจจัยอื่นๆ สำหรับ Startup</h5>
+                <p>เนื่องจากการใช้ตัวเลขอย่างเดียวนั้นยาก นักลงทุนจึงมักใช้ปัจจัยเชิงคุณภาพ (Qualitative Factors) เหล่านี้ประกอบการตัดสินใจอย่างมาก:</p>
+                <ul>
+                    <li><strong>ทีมผู้ก่อตั้ง (Founding Team):</strong> ทีมงานมีประสบการณ์และความสามารถแค่ไหน? นี่คือปัจจัยที่สำคัญที่สุดในระยะเริ่มต้น</li>
+                    <li><strong>ขนาดของตลาด (Market Size - TAM/SAM):</strong> โอกาสทางธุรกิจนี้ใหญ่พอที่จะเติบโต 10x, 100x ได้หรือไม่?</li>
+                    <li><strong>Traction:</strong> คุณมีหลักฐานที่จับต้องได้ว่าธุรกิจกำลังเติบโตหรือไม่? (เช่น ยอดผู้ใช้งาน, รายได้ที่เริ่มเข้ามา, Partnership ที่สำคัญ)</li>
+                    <li><strong>ความสามารถในการป้องกันการลอกเลียนแบบ (Defensibility):</strong> อะไรคือสิ่งที่จะทำให้คู่แข่งตามคุณทันได้ยาก? (เช่น เทคโนโลยี, แบรนด์, Network Effect)</li>
+                </ul>
+                <p>ท้ายที่สุดแล้ว มูลค่าของ Startup คือ "ราคาที่นักลงทุนยินดีจ่าย" ซึ่งเป็นผลมาจากการเล่าเรื่องราวที่น่าสนใจ, การแสดงให้เห็น Traction ที่ดี, และการเจรจาต่อรองที่ยอดเยี่ยม</p>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2024 คลาสเรียนเขียนแผนธุรกิจฉบับสมบูรณ์. สงวนลิขสิทธิ์.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
